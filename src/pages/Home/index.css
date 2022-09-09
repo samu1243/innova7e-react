@@ -1,0 +1,15 @@
+.home {
+    background-image: url(../../assets/images/earth_moon_transit_121207_1920x1080.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.icon {
+    animation: fadeIn 1.5s infinite alternate;
+}
+
+@keyframes fadeIn { 
+    from { opacity: 0; } 
+  }

@@ -1,0 +1,14 @@
+ .marcas{
+    background-image: url(../../../assets/images/item-0.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 100%;
+} 
+
+@media (max-width:750px){
+    .marcas{
+        height: 300px;
+        width: 100%;
+    }
+}

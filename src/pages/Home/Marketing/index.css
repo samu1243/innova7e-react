@@ -1,0 +1,6 @@
+@media (max-width:750px){
+    #item-1, #item-2, #item-3, #item-4{
+        height: 300px;
+        width: 100%;
+    }
+}

@@ -1,0 +1,16 @@
+.imm{
+    background-image: url(../../../assets/images/intems-5.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-color: black;
+}
+
+@media (max-width:750px){
+    .imm{
+        height: 300px;
+        width: 100%;
+    }
+    
+}

@@ -1,0 +1,6 @@
+@media (max-width:750px) {
+    #b1, #b2{
+        height: 400px;
+        width: 100%;
+    }
+}

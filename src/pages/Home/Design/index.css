@@ -1,0 +1,19 @@
+.design{
+    background-image: url(../../../assets/images/intem-rr.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-color: black;
+}
+
+@media (max-width:750px){
+    .design{
+        height: 330px;
+        width: 100%;
+    }
+    .grid{
+        justify-items: end;
+    }
+    
+}

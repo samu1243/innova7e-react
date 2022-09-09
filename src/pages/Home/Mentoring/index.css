@@ -1,0 +1,16 @@
+.mentoring{
+    background-image: url(../../../assets/images/intem-6.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-color: black;
+}
+
+@media (max-width:750px){
+    .mentoring{
+        height: 300px;
+        width: 100%;
+    }
+    
+}
