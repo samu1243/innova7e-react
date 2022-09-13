@@ -31,9 +31,9 @@ const ImageContainer = ({image, title, descriptionOne, descriptionTwo, color, id
   return (
     <div style={{backgroundImage: `url(${image})`}} className='bg-cover bg-center bg-no-repeat' id={id}>
         <motion.div ref={ref} animate={control} variants={variant} initial='hidden' className='flex justify-center items-center mt-2 sm:mt-4 mr-8 pl-4 fade-in' style={{color:`${color}`}}>
-            <p className='font-bold text-xl md:text-2xl lg:text-4xl text-center whitespace-nowrap align-center'>{title}</p>
+            <p className='font-bold text-lg md:text-2xl lg:text-4xl text-center whitespace-nowrap align-center'>{title}</p>
             <div className='border-[1px] h-[3em] sm:h-[5em] ml-6' style={{borderColor:`${color}`}}></div>
-            <p className='ml-4 text-[1em] sm:text-lg font-medium'>
+            <p className='ml-4 text-[0.8em] sm:text-lg font-medium'>
                     {descriptionOne}<br/> {descriptionTwo}
             </p>
         </motion.div>

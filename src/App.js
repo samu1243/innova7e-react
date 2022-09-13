@@ -9,6 +9,7 @@ import Tec from './pages/Home/Tecnologia/Tec';
 import Audiovisual from './pages/Home/Audiovisual/Audiovisual';
 import Design from './pages/Home/Design/Design';
 import Services from './pages/Home/Services/Services';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       <Audiovisual/>
       <Design/>
       <Services/>
+      <Footer/>
     </div>
   );
 }

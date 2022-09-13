@@ -1,0 +1,6 @@
+@media (max-width:750px){
+    #c1,#c2,#c3,#c4{
+        height: 350px;
+        width: 100%;
+    }
+}
