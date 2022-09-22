@@ -9,6 +9,9 @@ const Audiovisual = () => {
   return (
     <div className='w-full md:h-screen'>
         <div className='w-full h-full flex flex-col'>
+            <div className='flex h-[35px] sm:h-[60px] sm:text-4xl w-full bg-[#262626] justify-center items-center text-2xl font-bold text-white'>
+                 Desarrollo Audiovisual
+            </div>
             <div className='grid md:grid-cols-2 h-full w-full'>
                 <ImageContainer image={publicity} title={'Producción Publicitaria'} descriptionOne={'Marca La diferencia'} color={'white'} id={'tec1'}/>
                 <div className='grid md:grid-rows-2 h-full w-full'>

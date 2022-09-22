@@ -5,6 +5,9 @@ import { Link } from 'react-router-dom'
 const Design = () => {
   return (
     <div className='h-screen w-full design'>
+            <div className='flex h-[35px] sm:h-[60px] sm:text-4xl w-full bg-[#262626] justify-center items-center text-2xl font-bold text-white'>
+                 Diseño Gráfico
+            </div>
         <div className='h-full w-full flex flex-col justify-center items-center'>
             <div className='grid sm:grid-cols-2 w-full sm:items-center'>
                 <div></div>

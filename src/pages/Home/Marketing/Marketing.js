@@ -10,6 +10,9 @@ import ImageContainer from '../../../components/imageContainer/ImageContainer'
 const Marketing = () => {
   return (
     <div className='w-full marketing md:h-screen'>
+            <div className='flex h-[35px] sm:h-[60px] sm:text-4xl w-full bg-[#262626] justify-center items-center text-2xl font-bold text-white'>
+                 Marketing Digital
+            </div>
         <div className='mx-auto flex flex-col justify-center w-full h-full'>
             <div className='grid md:grid-cols-2 w-full h-full'>
                 <ImageContainer image={gestion} title={'Gestión de Marca'} color='black' descriptionOne={'Prospecta tu imagen'} descriptionTwo={'con nosotros'} id='item-1'/>
