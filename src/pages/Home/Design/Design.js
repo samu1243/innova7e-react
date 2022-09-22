@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 const Design = () => {
   return (
-    <div className='h-screen w-full design'>
+    <div className='h-screen w-full design' id='diseno'>
             <div className='flex h-[35px] sm:h-[60px] sm:text-4xl w-full bg-[#262626] justify-center items-center text-2xl font-bold text-white'>
                  Diseño Gráfico
             </div>

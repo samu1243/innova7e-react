@@ -37,7 +37,7 @@ const ImageContainer = ({image, title, descriptionOne, descriptionTwo, color, id
                     {descriptionOne}<br/> {descriptionTwo}
             </p>
         </motion.div>
-        <motion.p ref={ref} animate={control} variants={pVariant} initial='hidden' className='text-center font-bold mt-2 text-[#ffa500] hover:text-blue-600'><Link to={''}>Más Información <FontAwesomeIcon icon={faArrowRight}/></Link></motion.p>
+        <motion.p ref={ref} animate={control} variants={pVariant} initial='hidden' className='text-center font-bold mt-2 text-[#ffa500] hover:text-blue-600'><Link to={link}>Más Información <FontAwesomeIcon icon={faArrowRight}/></Link></motion.p>
     </div>
   )
 }

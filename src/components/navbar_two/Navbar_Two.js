@@ -3,45 +3,34 @@ import React, { useState } from 'react'
 import navbarLogo from '../../assets/images/innova7e-Horizontal.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons'
-import { Link } from 'react-scroll'
+import { Link } from 'react-router-dom'
 
-const Navbar = () => {
+const NavbarTwo = () => {
     const [menu, setMenu] = useState(false)
-    const [color, setColor] = useState(false)
-
-    const changeColor = () => {
-        if (window.scrollY >= 700){
-            setColor(true)
-        } else {
-            setColor(false)
-        }
-    }
-
-    window.addEventListener('scroll', changeColor)
 
     const handleMenu = () => {
         setMenu(!menu)
     }
     
   return (
-    <div className='fixed w-full h-[60px] flex justify-between items-center text-gray-400 px-4 main-nav z-50' id={color ? 'header' : ''}>
+    <div className='fixed w-full h-[60px] flex justify-between items-center text-gray-400 px-4 main-nav z-50'>
         <div className=''>
-            <Link to='inicio' smooth={true} duration={600}>
+            <Link to='/'>
                 <img src={navbarLogo} alt='logo' style={{width:'120px'}} className='cursor-pointer'></img>
             </Link>
         </div>
         <ul className='hidden md:flex cursor-pointer gap-4 mr-8 whitespace-nowrap menu-btn'>
             <li className='transition ease-in-out delay-75 hover:text-gray-300 font-medium text-[1rem]'>
-                <Link to='inicio' smooth={true} duration={600}>
+                <Link to='/'>
                     Inicio
                 </Link>
             </li>
             <li className='transition ease-in-out delay-75 hover:text-gray-300 font-medium text-[1rem] dropdown'>
-                <Link to='marketing' smooth={true} duration={600}>
+                <Link to=''>
                     Marketing Digital
                 </Link>
-                <div className='dropdown-content text-gray-400'>
-                    <a href='/gestion-de-marcas'>Gestión de Marca</a>
+                <div className='dropdown-content text-gray-400 pt-2'>
+                    <Link to=''>Gestión de Marca</Link>
                     <Link to=''>Video Marketing</Link>
                     <Link to=''>Branding</Link>
                     <Link to=''>Capacitación</Link>
@@ -51,17 +40,17 @@ const Navbar = () => {
                 Quiénes Somos
             </li>
             <li className='transition ease-in-out delay-75 hover:text-gray-300 font-medium text-[1rem]'>
-                <Link to='tec' smooth={true} duration={600}>
+                <Link to='tec'>
                     Tecnología
                 </Link>
             </li>
             <li className='transition ease-in-out delay-75 hover:text-gray-300 font-medium text-[1rem]'>
-                <Link to='desarrollo' smooth={true} duration={600}>
+                <Link to='desarrollo' >
                     Desarrollo Audiovisual
                 </Link>
             </li>
             <li className='transition ease-in-out delay-75 hover:text-gray-300 font-medium text-[1rem]'>
-                <Link to='diseno' smooth={true} duration={600}>
+                <Link to='diseno'>
                     Diseño Gráfico
                 </Link>
             </li>
@@ -93,4 +82,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default NavbarTwo

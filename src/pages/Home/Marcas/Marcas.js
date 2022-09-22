@@ -3,7 +3,7 @@ import React from 'react'
 
 const Marcas = () => {
   return (
-    <div className='w-full h-screen marcas'>
+    <div className='w-full h-screen marcas' id='marcas'>
     </div>
   )
 }
