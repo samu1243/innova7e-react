@@ -41,17 +41,17 @@ const NavbarTwo = () => {
                 Quiénes Somos
             </li>
             <li className='transition ease-in-out delay-75 hover:text-gray-300 font-medium text-[1rem]'>
-                <Link to='tec'>
+                <Link to='/#tec'>
                     Tecnología
                 </Link>
             </li>
             <li className='transition ease-in-out delay-75 hover:text-gray-300 font-medium text-[1rem]'>
-                <Link to='desarrollo' >
+                <Link to='/#desarrollo' >
                     Desarrollo Audiovisual
                 </Link>
             </li>
             <li className='transition ease-in-out delay-75 hover:text-gray-300 font-medium text-[1rem]'>
-                <Link to='diseno'>
+                <Link to='/#diseno'>
                     Diseño Gráfico
                 </Link>
             </li>
