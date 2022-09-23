@@ -8,7 +8,10 @@ import React from 'react'
 import ImageContainer from '../../../components/imageContainer/ImageContainer'
 
 const Marketing = () => {
+
+
   return (
+    
     <div className='w-full marketing md:h-screen' id='marketing'>
             <div className='flex h-[35px] sm:h-[60px] sm:text-4xl w-full bg-[#262626] justify-center items-center text-2xl font-bold text-white'>
                  Marketing Digital

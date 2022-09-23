@@ -7,10 +7,11 @@ import { Link } from 'react-router-dom'
 
 const NavbarTwo = () => {
     const [menu, setMenu] = useState(false)
-
+    
     const handleMenu = () => {
         setMenu(!menu)
     }
+    
     
   return (
     <div className='fixed w-full h-[60px] flex justify-between items-center text-gray-400 px-4 main-nav z-50'>
@@ -26,7 +27,7 @@ const NavbarTwo = () => {
                 </Link>
             </li>
             <li className='transition ease-in-out delay-75 hover:text-gray-300 font-medium text-[1rem] dropdown'>
-                <Link to=''>
+                <Link to='/#marketing'>
                     Marketing Digital
                 </Link>
                 <div className='dropdown-content text-gray-400 pt-2'>

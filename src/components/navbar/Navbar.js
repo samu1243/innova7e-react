@@ -3,7 +3,8 @@ import React, { useState } from 'react'
 import navbarLogo from '../../assets/images/innova7e-Horizontal.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons'
-import { Link } from 'react-scroll'
+import { Link as SLink} from 'react-scroll'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
     const [menu, setMenu] = useState(false)
@@ -26,22 +27,22 @@ const Navbar = () => {
   return (
     <div className='fixed w-full h-[60px] flex justify-between items-center text-gray-400 px-4 main-nav z-50' id={color ? 'header' : ''}>
         <div className=''>
-            <Link to='inicio' smooth={true} duration={600}>
+            <SLink to='inicio' smooth={true} duration={600}>
                 <img src={navbarLogo} alt='logo' style={{width:'120px'}} className='cursor-pointer'></img>
-            </Link>
+            </SLink>
         </div>
         <ul className='hidden md:flex cursor-pointer gap-4 mr-8 whitespace-nowrap menu-btn'>
             <li className='transition ease-in-out delay-75 hover:text-gray-300 font-medium text-[1rem]'>
-                <Link to='inicio' smooth={true} duration={600}>
+                <SLink to='inicio' smooth={true} duration={600}>
                     Inicio
-                </Link>
+                </SLink>
             </li>
             <li className='transition ease-in-out delay-75 hover:text-gray-300 font-medium text-[1rem] dropdown'>
-                <Link to='marketing' smooth={true} duration={600}>
+                <SLink to='marketing' smooth={true} duration={600}>
                     Marketing Digital
-                </Link>
+                </SLink>
                 <div className='dropdown-content text-gray-400'>
-                    <a href='/gestion-de-marcas'>Gestión de Marca</a>
+                    <Link to='/gestion-de-marcas'>Gestión de Marca</Link>
                     <Link to=''>Video Marketing</Link>
                     <Link to=''>Branding</Link>
                     <Link to=''>Capacitación</Link>
@@ -51,19 +52,19 @@ const Navbar = () => {
                 Quiénes Somos
             </li>
             <li className='transition ease-in-out delay-75 hover:text-gray-300 font-medium text-[1rem]'>
-                <Link to='tec' smooth={true} duration={600}>
+                <SLink to='tec' smooth={true} duration={600}>
                     Tecnología
-                </Link>
+                </SLink>
             </li>
             <li className='transition ease-in-out delay-75 hover:text-gray-300 font-medium text-[1rem]'>
-                <Link to='desarrollo' smooth={true} duration={600}>
+                <SLink to='desarrollo' smooth={true} duration={600}>
                     Desarrollo Audiovisual
-                </Link>
+                </SLink>
             </li>
             <li className='transition ease-in-out delay-75 hover:text-gray-300 font-medium text-[1rem]'>
-                <Link to='diseno' smooth={true} duration={600}>
+                <SLink to='diseno' smooth={true} duration={600}>
                     Diseño Gráfico
-                </Link>
+                </SLink>
             </li>
         </ul>
         <div className='md:hidden z-50' onClick={handleMenu}>
