@@ -40,42 +40,59 @@ const NavbarTwo = () => {
             <li className='transition ease-in-out delay-75 hover:text-gray-300 font-medium text-[1rem]'>
                 Quiénes Somos
             </li>
-            <li className='transition ease-in-out delay-75 hover:text-gray-300 font-medium text-[1rem]'>
+            <li className='transition ease-in-out delay-75 hover:text-gray-300 font-medium text-[1rem] dropdown'>
                 <Link to='/#tec'>
                     Tecnología
                 </Link>
+                <div className='dropdown-content text-gray-400 pt-2'>
+                    <Link to=''>Paginas Web</Link>
+                    <Link to=''>Hosting y dominio</Link>
+                    <Link to=''>Aplicaciones</Link>
+                </div>
             </li>
-            <li className='transition ease-in-out delay-75 hover:text-gray-300 font-medium text-[1rem]'>
+            <li className='transition ease-in-out delay-75 hover:text-gray-300 font-medium text-[1rem] dropdown'>
                 <Link to='/#desarrollo' >
                     Desarrollo Audiovisual
                 </Link>
+                <div className='dropdown-content text-gray-400 pt-2'>
+                    <Link to=''>Producción Publicitaria</Link>
+                    <Link to=''>Video-Documental</Link>
+                    <Link to=''>Fotografía</Link>
+                </div>
             </li>
-            <li className='transition ease-in-out delay-75 hover:text-gray-300 font-medium text-[1rem]'>
+            <li className='transition ease-in-out delay-75 hover:text-gray-300 font-medium text-[1rem] dropdown'>
                 <Link to='/#diseno'>
                     Diseño Gráfico
                 </Link>
+                <div className='dropdown-content text-gray-400 pt-2 right-2'>
+                    <Link to=''>Blender 3D</Link>
+                    <Link to=''>Papelería Corporativa</Link>
+                    <Link to=''>Desarrollo de Identidad</Link>
+                    <Link to=''>Enmaquetado Web</Link>
+                    <Link to=''>Gigantografía</Link>
+                </div>
             </li>
         </ul>
         <div className='md:hidden z-50' onClick={handleMenu}>
             {!menu ? <FontAwesomeIcon icon={faBars} className='text-xl hover:text-gray-300'/> : <FontAwesomeIcon icon={faXmark} className='text-xl hover:text-gray-300' />}
         </div>
             <ul className={!menu ? 'hidden' : 'absolute top-0 left-0 w-full h-screen phone-menu flex flex-col justify-center items-center'}>
-                <li className='py-6 text-2xl font-bold hover:text-gray-300'>
+                <li className='py-6 text-2xl font-bold hover:text-gray-300' onClick={handleMenu}>
                     Inicio
                 </li>
-                <li className='py-6 text-2xl font-bold hover:text-gray-300'>
+                <li className='py-6 text-2xl font-bold hover:text-gray-300' onClick={handleMenu}>
                     Marketing Digital
                 </li>
-                <li className='py-6 text-2xl font-bold hover:text-gray-300'>
+                <li className='py-6 text-2xl font-bold hover:text-gray-300' onClick={handleMenu}>
                     Quiénes Somos
                 </li>
-                <li className='py-6 text-2xl font-bold hover:text-gray-300'>
+                <li className='py-6 text-2xl font-bold hover:text-gray-300' onClick={handleMenu}>
                    Tecnología
                 </li>
-                <li className='py-6 text-2xl font-bold hover:text-gray-300'>
+                <li className='py-6 text-2xl font-bold hover:text-gray-300' onClick={handleMenu}>
                     Desarrollo Audiovisual
                 </li>
-                <li className='py-6 text-2xl font-bold hover:text-gray-300'>
+                <li className='py-6 text-2xl font-bold hover:text-gray-300' onClick={handleMenu} >
                     Diseño Gráfico
                 </li>
             </ul>
