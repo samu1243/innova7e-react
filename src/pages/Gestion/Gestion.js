@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import NavbarTwo from '../../components/navbar_two/Navbar_Two'
 import './index.css'
 
 const Gestion = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <>
     <NavbarTwo/>    

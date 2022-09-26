@@ -24,7 +24,6 @@ const Home = () => {
   useEffect(() => {
     if (location.hash){
       let elem = document.getElementById(location.hash.slice(1))
-      console.log(location.hash.slice(1))
       if (elem) {
           elem.scrollIntoView({behavior:'smooth'})
       } else{

@@ -72,22 +72,32 @@ const Navbar = () => {
         </div>
             <ul className={!menu ? 'hidden' : 'absolute top-0 left-0 w-full h-screen phone-menu flex flex-col justify-center items-center'}>
                 <li className='py-6 text-2xl font-bold hover:text-gray-300'>
-                    Inicio
+                    <SLink to='inicio' smooth={true} duration={500} onClick={handleMenu}>
+                        Inicio
+                    </SLink>
                 </li>
-                <li className='py-6 text-2xl font-bold hover:text-gray-300'>
-                    Marketing Digital
+                <li className='py-6 text-2xl font-bold hover:text-gray-300' onClick={handleMenu}>
+                    <SLink to='marketing' smooth={true} duration={500} onClick={handleMenu}>
+                        Marketing Digital
+                    </SLink>
                 </li>
-                <li className='py-6 text-2xl font-bold hover:text-gray-300'>
+                <li className='py-6 text-2xl font-bold hover:text-gray-300' onClick={handleMenu}>
                     Quiénes Somos
                 </li>
                 <li className='py-6 text-2xl font-bold hover:text-gray-300'>
-                   Tecnología
+                   <SLink to='tec' smooth={true} duration={500} onClick={handleMenu}>
+                        Tecnología
+                    </SLink>
                 </li>
                 <li className='py-6 text-2xl font-bold hover:text-gray-300'>
-                    Desarrollo Audiovisual
+                    <SLink to='desarrollo' smooth={true} duration={500} onClick={handleMenu}>
+                        Desarrollo Audiovisual
+                    </SLink>
                 </li>
                 <li className='py-6 text-2xl font-bold hover:text-gray-300'>
-                    Diseño Gráfico
+                    <SLink to='diseno' smooth={true} duration={500} onClick={handleMenu}>
+                        Diseño Gráfico
+                    </SLink>
                 </li>
             </ul>
     </div>
