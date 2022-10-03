@@ -16,13 +16,13 @@ const NavbarTwo = () => {
   return (
     <div className='fixed w-full h-[60px] flex justify-between items-center text-gray-400 px-4 main-nav z-50'>
         <div className=''>
-            <Link to='/'>
+            <Link to='/#inicio'>
                 <img src={navbarLogo} alt='logo' style={{width:'120px'}} className='cursor-pointer'></img>
             </Link>
         </div>
         <ul className='hidden md:flex cursor-pointer gap-4 mr-8 whitespace-nowrap menu-btn'>
             <li className='transition ease-in-out delay-75 hover:text-gray-300 font-medium text-[1rem]'>
-                <Link to='/'>
+                <Link to='/#inicio'>
                     Inicio
                 </Link>
             </li>
@@ -31,10 +31,10 @@ const NavbarTwo = () => {
                     Marketing Digital
                 </Link>
                 <div className='dropdown-content text-gray-400 pt-2'>
-                    <Link to=''>Gestión de Marca</Link>
-                    <Link to=''>Video Marketing</Link>
-                    <Link to=''>Branding</Link>
-                    <Link to=''>Capacitación</Link>
+                    <Link to='/gestion-de-marcas'>Gestión de Marca</Link>
+                    <Link to='/video-marketing'>Video Marketing</Link>
+                    <Link to='/branding'>Branding</Link>
+                    <Link to='/capacitacion'>Capacitación</Link>
                 </div>
             </li>
             <li className='transition ease-in-out delay-75 hover:text-gray-300 font-medium text-[1rem]'>
@@ -45,9 +45,9 @@ const NavbarTwo = () => {
                     Tecnología
                 </Link>
                 <div className='dropdown-content text-gray-400 pt-2'>
-                    <Link to=''>Paginas Web</Link>
-                    <Link to=''>Hosting y dominio</Link>
-                    <Link to=''>Aplicaciones</Link>
+                    <Link to='/paginas-web'>Paginas Web</Link>
+                    <Link to='/hosting-dominio'>Hosting y dominio</Link>
+                    <Link to='/aplicaciones'>Aplicaciones</Link>
                 </div>
             </li>
             <li className='transition ease-in-out delay-75 hover:text-gray-300 font-medium text-[1rem] dropdown'>
@@ -55,7 +55,7 @@ const NavbarTwo = () => {
                     Desarrollo Audiovisual
                 </Link>
                 <div className='dropdown-content text-gray-400 pt-2'>
-                    <Link to=''>Producción Publicitaria</Link>
+                    <Link to='/produccion-publicitaria'>Producción Publicitaria</Link>
                     <Link to=''>Video-Documental</Link>
                     <Link to=''>Fotografía</Link>
                 </div>

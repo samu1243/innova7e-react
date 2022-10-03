@@ -1,0 +1,16 @@
+.aplicacion{
+    background-image: url(../../../assets/images/intem-99.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-color: black;
+}
+
+@media (max-width:640px){
+    .aplicacion{
+        height: 280px;
+        width: 100%;
+    }
+    
+}
