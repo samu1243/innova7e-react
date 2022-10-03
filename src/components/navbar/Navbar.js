@@ -51,20 +51,37 @@ const Navbar = () => {
             <li className='transition ease-in-out delay-75 hover:text-gray-300 font-medium text-[1rem]'>
                 Quiénes Somos
             </li>
-            <li className='transition ease-in-out delay-75 hover:text-gray-300 font-medium text-[1rem]'>
+            <li className='transition ease-in-out delay-75 hover:text-gray-300 font-medium text-[1rem] dropdown'>
                 <SLink to='tec' smooth={true} duration={600}>
                     Tecnología
                 </SLink>
+                <div className='dropdown-content text-gray-400 pt-2'>
+                    <Link to=''>Paginas Web</Link>
+                    <Link to=''>Hosting y dominio</Link>
+                    <Link to=''>Aplicaciones</Link>
+                </div>
             </li>
-            <li className='transition ease-in-out delay-75 hover:text-gray-300 font-medium text-[1rem]'>
+            <li className='transition ease-in-out delay-75 hover:text-gray-300 font-medium text-[1rem] dropdown'>
                 <SLink to='desarrollo' smooth={true} duration={600}>
                     Desarrollo Audiovisual
                 </SLink>
+                <div className='dropdown-content text-gray-400 pt-2'>
+                    <Link to=''>Producción Publicitaria</Link>
+                    <Link to=''>Video-Documental</Link>
+                    <Link to=''>Fotografía</Link>
+                </div>
             </li>
-            <li className='transition ease-in-out delay-75 hover:text-gray-300 font-medium text-[1rem]'>
+            <li className='transition ease-in-out delay-75 hover:text-gray-300 font-medium text-[1rem] dropdown'>
                 <SLink to='diseno' smooth={true} duration={600}>
                     Diseño Gráfico
                 </SLink>
+                <div className='dropdown-content text-gray-400 pt-2 right-2'>
+                    <Link to=''>Blender 3D</Link>
+                    <Link to=''>Papelería Corporativa</Link>
+                    <Link to=''>Desarrollo de Identidad</Link>
+                    <Link to=''>Enmaquetado Web</Link>
+                    <Link to=''>Gigantografía</Link>
+                </div>
             </li>
         </ul>
         <div className='md:hidden z-50' onClick={handleMenu}>
