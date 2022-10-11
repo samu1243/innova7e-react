@@ -11,7 +11,7 @@ const Navbar = () => {
     const [color, setColor] = useState(false)
 
     const changeColor = () => {
-        if (window.scrollY >= 700){
+        if (window.scrollY >= 900){
             setColor(true)
         } else {
             setColor(false)
@@ -43,9 +43,9 @@ const Navbar = () => {
                 </SLink>
                 <div className='dropdown-content text-gray-400'>
                     <Link to='/gestion-de-marcas'>Gestión de Marca</Link>
-                    <Link to=''>Video Marketing</Link>
-                    <Link to=''>Branding</Link>
-                    <Link to=''>Capacitación</Link>
+                    <Link to='/video-marketing'>Video Marketing</Link>
+                    <Link to='/branding'>Branding</Link>
+                    <Link to='/capacitacion'>Capacitación</Link>
                 </div>
             </li>
             <li className='transition ease-in-out delay-75 hover:text-gray-300 font-medium text-[1rem]'>
@@ -56,9 +56,9 @@ const Navbar = () => {
                     Tecnología
                 </SLink>
                 <div className='dropdown-content text-gray-400 pt-2'>
-                    <Link to=''>Paginas Web</Link>
-                    <Link to=''>Hosting y dominio</Link>
-                    <Link to=''>Aplicaciones</Link>
+                    <Link to='/paginas-web'>Paginas Web</Link>
+                    <Link to='/hosting-dominio'>Hosting y dominio</Link>
+                    <Link to='/aplicaciones'>Aplicaciones</Link>
                 </div>
             </li>
             <li className='transition ease-in-out delay-75 hover:text-gray-300 font-medium text-[1rem] dropdown'>
@@ -66,7 +66,7 @@ const Navbar = () => {
                     Desarrollo Audiovisual
                 </SLink>
                 <div className='dropdown-content text-gray-400 pt-2'>
-                    <Link to=''>Producción Publicitaria</Link>
+                    <Link to='/produccion-publicitaria'>Producción Publicitaria</Link>
                     <Link to=''>Video-Documental</Link>
                     <Link to=''>Fotografía</Link>
                 </div>

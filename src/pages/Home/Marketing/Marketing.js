@@ -19,9 +19,9 @@ const Marketing = () => {
         <div className='mx-auto flex flex-col justify-center w-full h-full'>
             <div className='grid md:grid-cols-2 w-full h-full'>
                 <ImageContainer image={gestion} title={'Gestión de Marca'} color='black' descriptionOne={'Prospecta tu imagen'} descriptionTwo={'con nosotros'} id='item-1' link={'/gestion-de-marcas'}/>
-                <ImageContainer image={marketing} title={'Video Marketing'} color='white' descriptionOne={'Comerciales para'} descriptionTwo={'tus productos'} id='item-2' link={''}/>
-                <ImageContainer image={branding} title={'Branding'} color='white' descriptionOne={'Haz valer tu marca'} descriptionTwo={'con nosotros'} id='item-3' link={''}/>
-                <ImageContainer image={capacitacion} title={'Capacitación'} color='black' descriptionOne={'Aprende con'} descriptionTwo={'nosotros'} id='item-4' link={''}/>
+                <ImageContainer image={marketing} title={'Video Marketing'} color='white' descriptionOne={'Comerciales para'} descriptionTwo={'tus productos'} id='item-2' link={'/video-marketing'}/>
+                <ImageContainer image={branding} title={'Branding'} color='white' descriptionOne={'Haz valer tu marca'} descriptionTwo={'con nosotros'} id='item-3' link={'/branding'}/>
+                <ImageContainer image={capacitacion} title={'Capacitación'} color='black' descriptionOne={'Aprende con'} descriptionTwo={'nosotros'} id='item-4' link={'/capacitacion'}/>
             </div>
         </div>
     </div>

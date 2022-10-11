@@ -14,6 +14,7 @@ import Design from './Design/Design'
 import Services from './Services/Services'
 import Navbar from '../../components/navbar/Navbar'
 import { useLocation } from 'react-router-dom'
+import Aplicacion from './Aplicacion/Aplicacion'
 
 
 
@@ -64,6 +65,7 @@ const Home = () => {
       <Immobiliaria/>
       <Mentoring/>
       <Tec/>
+      <Aplicacion/>
       <Audiovisual/>
       <Design/>
       <Services/>
